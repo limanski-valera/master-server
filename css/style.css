@@ -7090,7 +7090,6 @@ textarea.input {
 }
 
 .spollers__item {
-  font-size: 1.25rem;
   border-left: 2px solid #2D3E50;
 }
 
@@ -9046,19 +9045,35 @@ textarea.input {
     position: relative;
     z-index: 2;
     cursor: pointer;
-    -webkit-transition: background-color 0.3s;
-    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s, border-color 0.3s;
+    transition: background-color 0.3s, border-color 0.3s;
+    border-left: 0.125rem solid transparent;
+    border-right: 0.125rem solid transparent;
+  }
+
+  .dropdown::before {
+    content: "";
+    position: absolute;
+    bottom: -0.125rem;
+    height: 0.125rem;
+    width: 100%;
+    z-index: 5;
+    background-color: #7a9757;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
   }
 
   .dropdown--right .dropdown__content {
-    right: -2px;
+    right: -0.125rem;
     left: auto;
   }
 
   .dropdown__content {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: -0.125rem;
     padding: 1.25rem;
     background-color: #7a9757;
     color: #fff;
@@ -9067,7 +9082,7 @@ textarea.input {
     -webkit-transform: translate(0, 20px);
         -ms-transform: translate(0, 20px);
             transform: translate(0, 20px);
-    border-bottom: 2px solid #2D3E50;
+    border: 0.125rem solid #fff;
   }
 
   .dropdown__links {
@@ -9075,6 +9090,10 @@ textarea.input {
     display: -ms-flexbox;
     display: flex;
     gap: 1.875rem;
+  }
+
+  .dropdown__link::before {
+    background-color: #2D3E50;
   }
 
   .header__menu {
@@ -9194,6 +9213,7 @@ textarea.input {
   .dropdown:hover {
     background-color: #7a9757;
     z-index: 5;
+    border-color: #fff;
   }
 
   .dropdown:hover .dropdown__content {
@@ -9206,6 +9226,10 @@ textarea.input {
     transition: visibility 0.3s, opacity 0.3s, -webkit-transform 0.3s;
     transition: visibility 0.3s, opacity 0.3s, transform 0.3s;
     transition: visibility 0.3s, opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+  }
+
+  .dropdown:hover::before {
+    opacity: 1;
   }
 }
 
@@ -9539,10 +9563,6 @@ textarea.input {
   [class*=__container] {
     max-width: none;
     padding: 0 0.9375rem;
-  }
-
-  .spollers__item {
-    font-size: 1rem;
   }
 
   .title {
