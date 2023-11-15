@@ -6995,53 +6995,6 @@ h6 {
   padding: 0 0.9375rem;
 }
 
-.button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 1rem 1.9375rem;
-  font-family: "Raleway", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  border-radius: 2px;
-  -webkit-transition: background-color 0.3s, color 0.3s;
-  transition: background-color 0.3s, color 0.3s;
-  background-color: #7a9757;
-  color: #fff;
-  text-align: center;
-}
-
-.button:active {
-  background-color: #fff;
-  color: #2D3E50;
-}
-
-.button--white {
-  background-color: #fff;
-  color: #2D3E50;
-}
-
-.button--white:hover {
-  background-color: #7a9757;
-  color: #fff;
-}
-
-.button--white:active {
-  background-color: #7a9757;
-  color: #fff;
-}
-
-.button--border {
-  border: 0.0625rem solid #7a9757;
-  padding-top: 0.9375rem;
-  padding-bottom: 0.9375rem;
-}
-
-.button--fw {
-  width: 100%;
-}
-
 input[type=text],
 input[type=email],
 input[type=tel],
@@ -7371,6 +7324,53 @@ textarea.input {
 
 .dropdown__title::marker {
   display: none;
+}
+
+.button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 1rem 1.9375rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-radius: 2px;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #7a9757;
+  color: #fff;
+  text-align: center;
+}
+
+.button:active {
+  background-color: #fff;
+  color: #2D3E50;
+}
+
+.button--white {
+  background-color: #fff;
+  color: #2D3E50;
+}
+
+.button--white:hover {
+  background-color: #7a9757;
+  color: #fff;
+}
+
+.button--white:active {
+  background-color: #7a9757;
+  color: #fff;
+}
+
+.button--border {
+  border: 0.0625rem solid #7a9757;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+}
+
+.button--fw {
+  width: 100%;
 }
 
 .header {
@@ -9531,6 +9531,14 @@ textarea.input {
     padding: 0 0.9375rem;
   }
 
+  .spollers__item {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 2.0625rem;
+  }
+
   .button {
     padding: 0.8125rem 0.9375rem;
     font-size: 1rem;
@@ -9539,14 +9547,6 @@ textarea.input {
   .button--border {
     padding-top: 1.0625rem;
     padding-bottom: 1.0625rem;
-  }
-
-  .spollers__item {
-    font-size: 1rem;
-  }
-
-  .title {
-    font-size: 2.0625rem;
   }
 
   .active-header {
@@ -9922,11 +9922,6 @@ textarea.input {
 }
 
 @media (any-hover: hover) {
-  .button:hover {
-    background-color: #fff;
-    color: #2D3E50;
-  }
-
   .spollers__title:hover {
     color: #7a9757;
   }
@@ -9939,6 +9934,11 @@ textarea.input {
   .link-header:hover::before {
     left: 0;
     width: 100%;
+  }
+
+  .button:hover {
+    background-color: #fff;
+    color: #2D3E50;
   }
 
   .header__logo:hover {
