@@ -7353,11 +7353,6 @@ textarea.input {
   color: #2D3E50;
 }
 
-.button--white:hover {
-  background-color: #7a9757;
-  color: #fff;
-}
-
 .button--white:active {
   background-color: #7a9757;
   color: #fff;
@@ -9939,6 +9934,11 @@ textarea.input {
   .button:hover {
     background-color: #fff;
     color: #2D3E50;
+  }
+
+  .button--white:hover {
+    background-color: #7a9757;
+    color: #fff;
   }
 
   .header__logo:hover {
