@@ -7160,6 +7160,14 @@ textarea.input {
   color: #7a9757;
 }
 
+.spollers__title::-webkit-details-marker {
+  display: none;
+}
+
+.spollers__title::marker {
+  display: none;
+}
+
 ._spoller-init .spollers__title {
   cursor: pointer;
   /*
