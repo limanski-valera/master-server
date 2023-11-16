@@ -7388,10 +7388,6 @@ textarea.input {
   transition: top 0.3s, background-color 0.3s;
 }
 
-._dark-header .header {
-  background-color: #2D3E50;
-}
-
 .header._header-scroll {
   top: -200px;
   background-color: #2D3E50;
@@ -9083,7 +9079,7 @@ textarea.input {
         flex-wrap: wrap;
   }
 
-  .servers__pricing .pricing__cards {
+  .pricing--grid .pricing__cards {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[4];
@@ -10154,7 +10150,7 @@ textarea.input {
     gap: 1.875rem;
   }
 
-  .servers__pricing .pricing__cards {
+  .pricing--grid .pricing__cards {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
