@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Contacts</title>
+	<title>Video-card</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<div class="wrapper _dark-header">
+	<div class="wrapper">
 		<header data-scroll="120" data-scroll-show="2000" class="header">
 			<div class="header__container">
 				<div class="header__logo-wrapper">
@@ -97,68 +97,136 @@
 			</div>
 		</header>
 
-		<main class="contacts">
-			<section class="contacts__main main-contacts">
-				<div class="main-contacts__container">
-					<div class="main-contacts__heading section-heading">
-						<h1 class="section-heading__title title">
-							GET IN
-							<span class="_green-text">TOUCH</span>
-							<span class="title__decor"></span>
-						</h1>
-						<div class="section-heading__text">
-							There are many variations of passages of Lorem Ipsum available, but
-							the majorityhave suffered alteration in some form, by injected
-							humour,available
+		<main class="video-card">
+			<section class="video-card__main-block main-block">
+				<div class="main-block__body">
+					<div class="main-block__container">
+						<div class="main-block__content">
+							<h1 class="main-block__title">
+								Аренда выделенных <span class="_green-text">серверов</span> с
+								GPU видеокартами
+							</h1>
+							<h2 class="main-block__sub-title">
+								Топовые производители:
+								<span class="_green-text">Nvidia Geforce, AMD Radeon</span>
+							</h2>
 						</div>
 					</div>
-					<div class="main-contacts__info">
-						<form class="main-contacts__form">
-							<h2 class="main-contacts__title">Say Hello</h2>
-							<div class="main-contacts__input-wrapper">
-								<input type="text" class="main-contacts__input input" placeholder="Name" />
-							</div>
-							<div class="main-contacts__input-wrapper">
-								<input type="email" class="main-contacts__input input" placeholder="Email" />
-							</div>
-							<div class="main-contacts__input-wrapper">
-								<textarea class="main-contacts__textarea input" placeholder="Message"></textarea>
-							</div>
-							<button type="submit" class="main-contacts__button button">
-								Submit
-							</button>
-						</form>
-						<div class="main-contacts__column">
-							<h2 class="main-contacts__title">Contacts Us</h2>
-							<ul class="main-contacts__list">
-								<li class="main-contacts__item">
-									<i class="main-contacts__icon zmdi zmdi-phone"></i>
-									<div class="main-contacts__links">
-										<a href="tel:+012345678102" class="main-contacts__link">+012 345 678 102</a>
-										<a href="tel:+012345678102" class="main-contacts__link">+012 345 678 102</a>
+				</div>
+				<div data-watch data-watch-once class="main-block__image">
+					<img src="img/backgrounds/rent-gpu-01.svg" alt="" />
+				</div>
+			</section>
+			<section class="video-card__possibilities possibilities">
+				<div class="possibilities__container">
+					<div class="possibilities__heading section-heading">
+						<h2 class="section-heading__title title">
+							Возможности
+							<span class="_green-text">GPU серверов</span>
+							<span class="title__decor"></span>
+						</h2>
+					</div>
+					<div class="possibilities__body">
+						<div class="possibilities__items">
+							<article class="possibilities__item item-possibilities">
+								<div class="item-possibilities__wrapper">
+									<div class="item-possibilities__image">
+										<img src="img/video-card/possibilities-icon-01.svg" alt="" />
 									</div>
-								</li>
-								<li class="main-contacts__item">
-									<i class="main-contacts__icon zmdi zmdi-globe-alt"></i>
-									<div class="main-contacts__links">
-										<a href="mailto:support@example.com" class="main-contacts__link">mailto:support@example.com</a>
-										<a href="mailto:support@example.com" class="main-contacts__link">https://example.com/</a>
+									<div class="item-possibilities__content">
+										<h3 class="item-possibilities__title">
+											ЗD моделирование
+										</h3>
+										<div class="item-possibilities__text">
+											<p>
+												Выбирайте сервер с мощной видеокартой для
+												моделирования в компьютерных играх, создания
+												анимации и тяжелой графики
+											</p>
+										</div>
 									</div>
-								</li>
-								<li class="main-contacts__item">
-									<i class="main-contacts__icon zmdi zmdi-pin"></i>
-									<div class="main-contacts__links">
-										<a href="#" class="main-contacts__link">exampleaddress goes here, street,Crossroad123.</a>
+								</div>
+							</article>
+							<article class="possibilities__item item-possibilities">
+								<div class="item-possibilities__wrapper">
+									<div class="item-possibilities__image">
+										<img src="img/video-card/possibilities-icon-02.svg" alt="" />
 									</div>
-								</li>
-							</ul>
+									<div class="item-possibilities__content">
+										<h3 class="item-possibilities__title">
+											Майнинг криптовалют
+										</h3>
+										<div class="item-possibilities__text">
+											<p>
+												Игровые видеокарты для майнинга. В данный момент
+												майнинг на наших серверах запрещен!
+											</p>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="possibilities__item item-possibilities">
+								<div class="item-possibilities__wrapper">
+									<div class="item-possibilities__image">
+										<img src="img/video-card/possibilities-icon-03.svg" alt="" />
+									</div>
+									<div class="item-possibilities__content">
+										<h3 class="item-possibilities__title">
+											Анализ Big Data
+										</h3>
+										<div class="item-possibilities__text">
+											<p>
+												GPU видеокарты для обработки больших массивов
+												данных, анализа Big Data, машинного обучения и
+												аналитики
+											</p>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="possibilities__items possibilities__items--right">
+							<article class="possibilities__item item-possibilities">
+								<div class="item-possibilities__wrapper">
+									<div class="item-possibilities__image">
+										<img src="img/video-card/possibilities-icon-04.svg" alt="" />
+									</div>
+									<div class="item-possibilities__content">
+										<h3 class="item-possibilities__title">Стриминг</h3>
+										<div class="item-possibilities__text">
+											<p>
+												Непрерывное потоковое онлайн-вещание для
+												спортивных событий, музыки, видео, компьютерных
+												и других направлений
+											</p>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="possibilities__item item-possibilities">
+								<div class="item-possibilities__wrapper">
+									<div class="item-possibilities__image">
+										<img src="img/video-card/possibilities-icon-05.svg" alt="" />
+									</div>
+									<div class="item-possibilities__content">
+										<h3 class="item-possibilities__title">Рендеринг</h3>
+										<div class="item-possibilities__text">
+											<p>
+												Многопоточный рендеринг (визуализация)
+												существенно упростит создание моделей в
+												компьютерных программах
+											</p>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="possibilities__image">
+							<img src="img/video-card/possibilities.svg" alt="" />
 						</div>
 					</div>
 				</div>
 			</section>
-			<div class="contacts__map map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.2649890774856!2d-0.09080112337876554!3d51.5266993718177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d7d768b7569%3A0xc26bf3d248b92a27!2sCapital%20Office%20Ltd!5e0!3m2!1sru!2sua!4v1700058647095!5m2!1sru!2sua" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
